@@ -1,0 +1,121 @@
+.stigg-plan-offering-container {
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.05)
+  );
+  border: 0px;
+  border-radius: 16px;
+}
+
+.stigg-plan-offering-container::before {
+  content: "";
+  pointer-events: none;
+  user-select: none;
+  position: absolute;
+  inset: 0px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(rgb(120, 119, 198), rgba(255, 255, 255, 0.05));
+  -webkit-mask: linear-gradient(black, black) content-box content-box,
+    linear-gradient(black, black);
+  -webkit-mask-composite: xor;
+}
+
+.stigg-plan-description {
+  min-height: 60px;
+}
+
+.stigg-plan-header-divider {
+  background-color: rgb(49, 48, 53);
+  width: 90%;
+  height: 1px;
+}
+
+.stigg-plan-entitlements-title,
+.stigg-entitlement-name {
+  color: #f7f8f8;
+}
+
+.stigg-price-text > p {
+  font-size: 1.3rem;
+}
+
+.stigg-entitlement-row-icon {
+  stroke: rgb(94, 106, 210); /* hack to change the V icons */
+}
+
+.stigg-paywall-plan-button {
+  background: rgb(94, 106, 210);
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  padding: 0 24px;
+}
+
+.stigg-paywall-plan-button:hover {
+  background: rgb(130, 143, 255);
+}
+
+.stigg-paywall-plan-button-text {
+  color: white;
+}
+
+.stigg-paywall-plan-button > svg {
+  /* hide all content */
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.stigg-paywall-plans-layout > :last-child {
+  max-width: none;
+  max-height: none;
+  width: 700px;
+  margin-top: 20px;
+}
+
+.stigg-paywall-plans-layout > :last-child > .stigg-header-wrapper {
+  align-items: flex-start;
+}
+
+.stigg-paywall-plans-layout > :last-child > .stigg-header-wrapper > p {
+  text-align: start;
+  font-size: 1rem;
+}
+
+.stigg-paywall-plans-layout
+  > :last-child
+  > .stigg-header-wrapper
+  > p:first-child {
+  text-align: start;
+  font-size: 2rem;
+  padding: 0;
+}
+
+.stigg-paywall-plans-layout > :last-child > .stigg-header-wrapper :last-child {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.stigg-paywall-plans-layout > :last-child > .stigg-plan-entitlements-container {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
