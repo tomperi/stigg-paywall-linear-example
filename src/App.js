@@ -1,5 +1,5 @@
-import "./styles.css";
 import "./reset.css";
+import "./styles.css";
 import { StiggProvider, Paywall } from "@stigg/react-sdk";
 import { TEXT_OVERRIDES } from "./stigg.config";
 
